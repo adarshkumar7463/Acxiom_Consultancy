@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Status Module</title>
+  <link rel="stylesheet" href="Product_Status.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="#">Home</a>
+    </div>
+    <div class="nav-right">
+      <a href="#" class="logout">Logout</a>
+    </div>
+  </nav>
+
+  <section class="content">
+    <h2>Product Status Module</h2>
+    
+    <div class="product-info">
+      <label for="name">Name:</label>
+      <input type="text" id="name" value="Product A" readonly>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" value="producta@example.com" readonly>
+
+      <label for="contact">Contact:</label>
+      <input type="text" id="contact" value="123-456-7890" readonly>
+
+      <label for="status">Status:</label>
+      <select id="status">
+        <option value="active">Active</option>
+        <option value="inactive">Inactive</option>
+      </select>
+
+      <div class="actions">
+        <button onclick="updateProduct()">Update</button>
+        <button onclick="deleteProduct()">Delete</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="Product_Status.js"></script>
+</body>
+</html>

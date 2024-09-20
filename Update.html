@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update Module</title>
+  <link rel="stylesheet" href="Update.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="Home _Page.html">Home</a>
+    </div>
+    <div class="nav-right" >
+        <a href="Home _Page.html">Logout</a>
+    </div>
+</nav>
+
+<section class="content">
+    <h2>Update Product Status</h2>
+    
+    <div class="status-update">
+    <label for="status">Product Status:</label>
+    <select id="status">
+        <option value="received">Received</option>
+        <option value="ready">Ready for Shipment</option>
+        <option value="out-for-delivery">Out for Delivery</option>
+    </select>
+
+    <div class="actions">
+        <button onclick="updateStatus()">Update Status</button>
+    </div>
+    </div>
+</section>
+
+<script src="Update.js"></script>
+</body>
+</html>

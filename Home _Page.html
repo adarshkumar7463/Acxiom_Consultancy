@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management - Home</title>
+    <link rel="stylesheet" href="Home_Page.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Event Management</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Welcome to Event Management</h2>
+            <p>Manage your events seamlessly with us!</p>
+        </section>
+
+        <section class="login-options">
+            <h3>Login Options</h3>
+            <div class="login-cards">
+                <div class="card">
+                    <h4 >Vendor Login</h4>
+                    <button class="btn" onclick="loginAsVendor()" >Vendor Login</button>
+                    
+                </div>
+                <div class="card">
+                    <h4>User Login</h4>
+                    <button class="btn" onclick="loginAsUser()" >User Login</button>
+                    
+                </div>
+                <div class="card">
+                    <h4>Admin Login</h4>
+                    <button class="btn" onclick="loginAsAdmin()" >Admin Login</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Event Management. All rights reserved.</p>
+    </footer>
+
+    <script src="Home_Page.js"></script>
+</body>
+</html>

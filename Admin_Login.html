@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="Admin_Login.css">
+</head>
+<body>
+    <div class="container">
+    <div id="loginContainer">
+        <form id="loginForm">
+            <h2>Event Management System</h2>
+            <label for="userId">User ID:</label>    
+            <input type="text" id="userId" name="userId" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Cancel</button>
+            <button type="submit">Login</button>
+            <div id="loginMessage"></div>
+        </form>
+    </div>
+    </div>    
+
+    <div class="admin-container" id="adminContainer" style="display: none;">
+        <aside class="sidebar">
+            <h2>Admin Panel</h2>
+            <ul>
+                <li><a href="#" id="dashboardLink">Dashboard</a></li>
+                <li><a href="#" id="usersLink">Users</a></li>
+                <li><a href="#" id="settingsLink">Settings</a></li>
+            </ul>
+        </aside>
+        <main class="content" id="content">
+            <h1>Welcome to the Admin Panel</h1>
+            <div id="contentArea">
+                <!-- Content will be loaded here dynamically -->
+            </div>
+        </main>
+    </div>
+
+    <script src="Admin_Login.js"></script>
+</body>
+</html>

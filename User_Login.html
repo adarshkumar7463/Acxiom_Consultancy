@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <link rel="stylesheet" href="User_Login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <h2>User Login</h2>
+            <section id="userLoginForm">
+                <div class="input-group">
+                    <label for="userId">User ID</label>
+                    <input type="text" id="userId" name="userId" required>
+                </div>
+                
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+            
+                <div class="button-group">
+                    <button type="submit" class="login-btn" onclick="submitLogin()"> Login </button>
+                    <button type="button" class="cancel-btn" onclick="cancelLogin()">Cancel</button>
+                </div>
+
+            
+                <p>New User? <a href="User_Signup.html">Sign up here</a></p>
+            </section>
+        </div>
+    </div>
+    <script src="User_Login.js"></script>
+</body>
+</html>

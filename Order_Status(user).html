@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Status Module</title>
+    <link rel="stylesheet" href="Order_Status(user).css">
+</head>
+<body>
+    <div class="header">
+        <!-- Home Button -->
+        <button class="home-button" onclick="goHome()">Home</button>
+
+        <!-- Logout Button -->
+        <button class="logout-button" onclick="logout()">Logout</button>
+    </div>
+
+    <!-- Order Status Section -->
+    <div class="order-status-container">
+        <h2>Order Status</h2>
+        <form id="order-status-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" placeholder="123 Street, City, Country" required></textarea>
+
+            <label for="status">Order Status:</label>
+            <select id="status" name="status">
+                <option value="processing">Processing</option>
+                <option value="shipped">Shipped</option>
+                <option value="delivered">Delivered</option>
+                <option value="cancelled">Cancelled</option>
+            </select>
+
+            <button type="submit">Update Status</button>
+        </form>
+    </div>
+
+    <script src="Order_Status(user).js"></script>
+</body>
+</html>

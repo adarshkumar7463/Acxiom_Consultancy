@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Header with Flex Buttons */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #4CAF50;
+    position: absolute;
+    top: 0;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 16px;
+    background-color: white;
+    color: #4CAF50;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+.logout-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Shopping Cart Section */
+.cart-container {
+    width: 80%;
+    margin-top: 80px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-table th, .cart-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.cart-table th {
+    background-color: #f2f2f2;
+}
+
+.cart-table td img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+/* Grand Total */
+.grand-total {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.grand-total h3 {
+    color: #4CAF50;
+}
+
+/* Proceed to Checkout Button */
+.checkout-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.checkout-btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .cart-container {
+        width: 60%;
+    }
+}
